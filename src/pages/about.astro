@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+
+const name = "Smitty";
+const bio = "I'm a college student learning web development and building my first Astro site.";
+---
+
+<html>
+  <head>
+    <title>About Me</title>
+    <style>
+      h1 {
+        color: darkblue;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/about">About</a> |
+      <a href="/blog">Blog</a>
+    </nav>
+
+    <h1>About {name}</h1>
+    <p>{bio}</p>
+  </body>
+</html>
